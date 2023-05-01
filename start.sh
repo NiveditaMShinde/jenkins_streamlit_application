@@ -2,11 +2,11 @@
 
 
 cd /home/ec2-user/
-sudo netstat -tnlp | grep 5000
+sudo netstat -tnlp | grep 8501
 if [ $(echo $?) = 1 ]
 then
-  	screen -m -d python3 app.py
+  	screen -m -d stramlit run app.py
 else
-      fuser -k 5000/tcp
-      screen -m -d python3 app.py
+      fuser -k 8501/tcp
+      screen -m -d streamlit run app.py
 fi

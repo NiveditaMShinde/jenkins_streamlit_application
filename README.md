@@ -1,1 +1,1 @@
-# jenkins_flask_application
+# jenkins_streamlit_application

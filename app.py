@@ -2,9 +2,8 @@
 import numpy as np
 import pandas as pd
 import warnings
-import seaborn as sns
-import matplotlib.pyplot as plt
 import pickle
+import sklearn
 import streamlit as st
 
 model = pickle.load(open("new_classifier1.pkl", "rb"))

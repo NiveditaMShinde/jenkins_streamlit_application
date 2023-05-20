@@ -8,7 +8,7 @@ import streamlit as st
 
 model = pickle.load(open("new_classifier1.pkl", "rb"))
     
-st.title("Fertilizer Recommendation System")
+st.title("Fertilizer Recommendation System by Jenkins")
 
 
 a = int(st.number_input("Enter Temperature in celsius"))
